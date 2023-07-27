@@ -1,56 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: "Poppins", sans-serif ;
+    text-decoration: none;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 20% 70%;
 }
 
-:root{
---brand: #17e4ff;
---bran-secondary: #15b2c6;
---dark-blue: #1c3145;
---gray-prymary: #e5e5e5;
---gray-secondary: #c8c8c8;
---gray-tertiary:#e2e2e2;
---green-primary: #009b43;
---padding-1: 0 3rem;
---padding-2: 1rem;
---margin-1: 1rem;
---border-radius-1: 8px;
---border-radius-2: 4px;
---padding-1: 0 3rem;
---padding-2:
+:root {
+    --brand: #17e4ff;
+    --bran-secondary: #15b2c6;
+    --dark-blue: #1c3145;
+    --gray-prymary: #e5e5e5;
+    --gray-secondary: #c8c8c8;
+    --gray-tertiary: #e2e2e2;
+    --green-primary: #009b43;
+    --padding-1: 0 3rem;
+    --padding-2: 1rem;
+    --margin-1: 1rem;
+    --border-radius-1: 8px;
+    --border-radius-2: 4px;
+    --padding-1: 0 3rem;
+    --padding-2: 1rem;
 }
 
-header{
+header {
     grid-column: 1/1;
     height: 100%;
     border-right: solid 1px var(--dark-blue);
+    padding: 0 var(--padding-2);
+    display: flex;
+    flex-direction: column;
 
 }
 
-.profile{
-padding: var(--padding-2);
-display: flex;
-align-items: center;
-gap: 1rem;
+.profile {
+    padding: var(--padding-2) 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 
 }
-.profile small{
+
+.profile small {
     display: block;
 }
 
-.profile img{
-    width: 100px;
-    height: 100px;
+.profile img {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
+}
+
+.menu-profile {
+    padding-top: var(--padding-2);
+    border-top: solid 1px var(--dark-blue);
+}
+
+.menu-profile li {
+    padding: .5rem var(--padding-2);
+    transition: all .3s;
+}
+
+.menu-profile li:hover {
+    background-color: var(--dark-blue);
+
+}
+
+
+.menu-profile li :hover a {
+
+    color: #fff;
+}
+
+.menu-profile li a {
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+#Logout {
+    width: fit-content;
+    margin: auto auto var(--margin-1) var(--margin-1);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
 }
