@@ -51,6 +51,29 @@ header {
     font-size: 1.5hem;
 }
 
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+
+    30% {
+        transform: rotate(45px);
+    }
+
+    50% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(300deg);
+    }
+}
+
+
+.logo img {
+    animation: spin .3s infinite;
+}
+
 .menu {
     display: flex;
 
