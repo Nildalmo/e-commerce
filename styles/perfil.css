@@ -80,7 +80,7 @@ header {
 
 .menu-profile li a:hover {
 
-    color: #fff;
+    color: #ffffff;
 }
 
 .menu-profile li a {
@@ -96,4 +96,35 @@ header {
     border: none;
     cursor: pointer;
     font-size: 1rem;
+}
+
+main {
+    grid-column: 2/2;
+    padding: 2rem;
+}
+
+.content-box {
+    margin-bottom: 2rem;
+}
+
+.content-box div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-box label {
+    width: calc(100 / 3);
+}
+
+.content-box input {
+    display: block;
+    padding: .3rem var(--padding-2);
+    border: none;
+    border-radius: var(--border-radius-1);
+    background-color: #ffc0c0;
+    margin: 10px 0 1rem 0;
+}
+
+.content-box h3 {
+    padding: var(--padding-2);
 }
